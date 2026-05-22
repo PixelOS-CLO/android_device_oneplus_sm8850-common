@@ -1,2 +1,7 @@
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
+
+# RKP
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+remote_provisioning.strongbox.rkp_only=true

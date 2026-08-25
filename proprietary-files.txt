@@ -358,7 +358,6 @@ vendor/etc/init/vendor.qti.fastrpc.pd-default-config.rc
 vendor/etc/vintf/manifest/fm_hci.xml
 vendor/lib64/hw/vendor.qti.hardware.fm-impl.so
 vendor/lib64/vendor.qti.hardware.fm-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-rust-service-qti
@@ -756,8 +755,6 @@ vendor/lib64/qsn3_video.bin
 vendor/lib64/qsn3all.bin
 
 # QSPA
-system_ext/etc/init/qspa_system.rc
-system_ext/etc/qspa/qspa_default.rc
 vendor/etc/qspa/nsp_disabled.rc
 
 # QSPM

@@ -106,8 +106,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .regex_replace(r'sensors\.qsh\.so', 'sensors.fusionlight.so'),
     (
-        'vendor/etc/media_codecs_canoe_sku3.xml',
-        'vendor/etc/media_codecs_canoe_v2.xml',
+        'vendor/etc/media_codecs_canoe_sku3_vendor.xml',
+        'vendor/etc/media_codecs_canoe_v2_vendor.xml',
     ): blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
     'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()

@@ -536,6 +536,7 @@ vendor/bin/hw/vendor.qti.hardware.perf2-hal-service
 vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/commonsysnodesconfigs.xml
+vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/perf/targetsysnodesconfigs.xml

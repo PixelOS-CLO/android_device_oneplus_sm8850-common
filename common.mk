@@ -8,6 +8,13 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
+
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.virtual_ab.compression.threads=true \
+    ro.virtual_ab.o_direct.enabled=true
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -167,6 +174,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
+
+# Characteristics
+ifneq ($(TARGET_IS_TABLET),true)
+PRODUCT_CHARACTERISTICS := nosdcard
+endif
 
 # Context Hub
 ifneq ($(TARGET_IS_TABLET),true)

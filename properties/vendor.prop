@@ -38,12 +38,14 @@ vendor.qc2audio.suspend.enabled=true
 # Bluetooth
 bluetooth.core.le_audio.codec_extension_aidl.enabled=true
 bluetooth.profile.asha.central.enabled=true
+bluetooth.profile.avrcp.controller.enabled=false
 bluetooth.profile.bap.broadcast.assist.enabled=true
 bluetooth.profile.bap.broadcast.source.enabled=true
 bluetooth.profile.bap.unicast.client.enabled=true
 bluetooth.profile.ccp.server.enabled=true
 bluetooth.profile.csip.set_coordinator.enabled=true
 bluetooth.profile.hap.client.enabled=true
+bluetooth.profile.hid.device.enabled=true
 bluetooth.profile.mcp.server.enabled=true
 bluetooth.profile.vcp.controller.enabled=true
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
@@ -107,6 +109,7 @@ vendor.display.enable_rc_support=1
 vendor.display.enable_rounded_corner=1
 vendor.display.force_lm_to_fb_config=1
 vendor.display.force_tonemapping=1
+vendor.display.smomo_game_support=0
 vendor.display.uir_support=1
 vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=1
@@ -157,6 +160,7 @@ debug.sf.earlyGl.sf.duration.40=16500000
 debug.sf.earlyGl.sf.duration.60=15666666
 debug.sf.earlyGl.sf.duration.90=13111111
 debug.sf.earlyGl.sf.duration=10500000
+debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.late.app.duration.144=10333333
 debug.sf.late.app.duration.165=10333333
 debug.sf.late.app.duration.60=16666666
@@ -208,6 +212,8 @@ ro.arm64.memtag.bootctl_supported=1
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=1
 ro.vendor.qspm.enable=true
+vendor.perf.framepacing.enable=1
+vendor.perf.qfps.enable=1
 
 # Radio
 persist.radio.multisim.config=dsds
@@ -216,6 +222,9 @@ persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.sib16_support=1
+
+# RCS
+persist.vendor.rcs.singlereg.feature=2
 
 # Secureprocessor
 vendor.secureprocessor.service_start=1

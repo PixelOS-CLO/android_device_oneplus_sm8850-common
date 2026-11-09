@@ -98,6 +98,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/perf/perfconfigstore.xml': blob_fixup()
         .regex_replace(r'.*"vendor\.perf\.expensive_rendering".*\n', '')
         .regex_replace(r'(\n)(\s*)(</PerfConfigs>)', r'\1\2    <Prop Name="vendor.perf.expensive_rendering" Value="1" />\n\2\3'),
+    'vendor/etc/perf/targetresourceconfigs.xml': blob_fixup()
+        .regex_replace(r'(MajorValue="0xA" MinorValue="0x[89]") Supported="no"', r'\1 Node="/sys/class/kgsl/kgsl/proc/%d/state"'),
     'vendor/etc/seccomp_policy/qsap_qapeservice.policy': blob_fixup()
         .add_line_if_missing('lseek: 1'),
     'vendor/etc/seccomp_policy/syshealthmon.policy': blob_fixup()

@@ -5,13 +5,24 @@ ro.oplus.image.my_engineering.type=release
 ro.vendor.qti.va_odm.support=1
 sys.oplus_ftm_mode=997
 
+# Camera
+ro.version.confidential=false
+
 # Media
 ro.odm.build.media_performance_class=35
+ro.oplus.vpp.viltesr.enable=1
+ro.oplus.vpp.wechatsr.enable=1
 
 # Radio
+persist.vendor.radio.mdccbsize=164
 persist.vendor.radio.virtualcomm=1
 ro.sys.reserve.integrate=true
+ro.vendor.config.oplus.uniform_single_sim=2
 ro.vendor.oplus.radio.carrier_detect_mode=1
+ro.vendor.oplus.radio.pdn_already_exist=1
+
+# Sensors
+persist.vendor.oplus.sensor.sup_game_config_gyro=true
 
 # SVN
 ro.build.version.svn=75

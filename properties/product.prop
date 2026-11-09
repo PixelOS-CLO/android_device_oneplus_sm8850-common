@@ -7,3 +7,8 @@ ro.opa.device_model_id=ga-oplus-skill-os121-211011
 remote_provisioning.enable_rkpd=true
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
 remote_provisioning.strongbox.rkp_only=true
+remote_provisioning.tee.rkp_only=true
+
+# Setup wizard
+ro.setupwizard.rotation_locked=true
+setupwizard.feature.esim_enabled=true
